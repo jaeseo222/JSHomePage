@@ -1,0 +1,34 @@
+.content_inner{
+    position: relative;
+}
+.scrollBox{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+
+    overflow:auto;
+}
+.photoPosting{
+    margin-bottom: 5px;
+    font-family: 'NeoDunggeunmo';
+}
+.photoPosting>.postTitle{
+    background-color: lightgray;
+    padding: 0.6em 1em;
+}
+.photoPosting>.postTitle>span{
+    font-size: 0.7em;
+}
+.photoPosting>.imageBox{
+    position: flex;
+    flex-direction: column;
+    padding: 0.7em 1em;
+}
+.photoPosting>.imageBox img{
+    width: 100%;
+}
+.photoPosting>.imageBox>.ment{
+    padding: 0.7em 0px 2em;
+}

@@ -95,7 +95,7 @@ body {
     flex-direction: column;
     font-family: 'NeoDunggeunmo';
   }
-  
+
   /** container_profile, container_contents 컨테이너의 아이템 - header, box */
   .header{
     flex: 0.1;
@@ -115,11 +115,11 @@ body {
     padding: 5px 0;
     display: flex;
   }
-  .content_title-name{
+  .contents_title>.name{
     flex: 1;
     font-family: 'NeoDunggeunmo';
   }
-  .content_title-url{
+  .contents_title>.url{
     flex: 1;
     font-size: 0.7rem;
     text-align: right;
@@ -138,21 +138,21 @@ body {
     font-family: 'Uiyeun';
     font-size: 1.5rem;
   }
-  .profile_inner-image{
+  .profile_inner>.image{
     flex: 0.4;
     background-image: url("../static/images/profile.jpg");
   }
-  .profile_inner-myIntro{
+  .profile_inner>.myIntro{
     flex: 0.5;
     margin-top: 30px;
   }
-  .profile_inner-myInfo{
+  .profile_inner>.myInfo{
     margin-top: 30px;
     flex: 0.1;
   }
 
   /*파도타기*/
-  .profile_inner-Dropdown{
+  .profile_inner>.dropdown{
     flex: 0;
     border: 1px solid #c9d4da;
     padding: 5px;
@@ -178,7 +178,7 @@ body {
     left: 0;
     width: 100%;
   }
-  .profile_inner-Dropdown:hover > .dropdown-content {
+  .profile_inner>.dropdown:hover > .dropdown-content {
     display: inline-block;
   }
   .dropdown-content > a {
@@ -201,6 +201,7 @@ body {
     flex-direction: column;
     font-family: 'UNPGothicKS';
   }
+  
   /*메뉴*/
   .container_menu>a{
     font-size: 0.8em;
@@ -213,7 +214,7 @@ body {
     border-bottom-right-radius: 9px;
     text-decoration: none;
   }
-  .container_menu>a:hover{
-    background-color:white;
-    color: black;
+  .container_menu>a#current, .container_menu>a:hover{
+    background-color: white;
+    color:black;
   }

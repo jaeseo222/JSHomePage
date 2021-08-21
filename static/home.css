@@ -9,7 +9,7 @@
   .content_inner-updatedNews-contents{
     display: flex;
   }
-  .content_inner-updatedNews-contents-e{
+  .news{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -23,33 +23,35 @@
     font-size: 1.1em;
   }
   /*updated news 사진첩, 게시판*/
-  .content-news-e{
+  .news-l{
     flex: 0.25;
-    margin-bottom: 10px;
+    margin: 0.4em 0px;
   }
-  .content-news-element1{
+  .news-l > .e1{
     color: white;
     padding: 4px 8px;
     background-color: rgb(245, 0, 230);
     border-radius: 3px;
   }
-  .content-news-element2{
+  .news-l > .e2{
     color: white;
     padding: 4px 8px;
     background-color: rgb(7, 204, 184);
     border-radius: 3px;
   }
   /*updated news 다이어리, 사진첩, 게시판, 방명록*/
-  .content-news-col{
+  .new-r{
     display: flex;
   }
-  .content-news-row{
+  .new-r>div{
     flex: 1;
+    margin-top: 0.2em;
   }
-  .content-news-row-num{
+  .new-r>div>span{
     font-family: 'NeoDunggeunmo';
     color: blue;
     font-weight: 400;
+    margin-left: 0.5em;
   }
   /*점선*/
   .hr-dash{
