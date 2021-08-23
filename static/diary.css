@@ -1,0 +1,81 @@
+.content_inner{
+    position: relative;
+    font-family: 'NeoDunggeunmo';
+}
+.content_inner .box_d{
+    border: 1px solid #e0e0e0;
+}
+
+/*달력*/
+.dateBox{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+}
+.today{
+    flex: 0 0 2rem;
+    margin: 0 1rem;
+    text-align: center;
+    color: #3b87ab;
+    font-weight: 700;
+}
+.days{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.date {
+    flex: 0 0 1.5rem;
+    color: #707070;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*다이어리*/
+.scrollBox{
+    position: absolute;
+    margin-top: 4rem;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    overflow: auto;
+
+    text-align: center; 
+}
+.diaryPosting{
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+.postDate{
+    text-align: left;
+    color: #3b87ab;
+    margin-bottom: 1.2em;
+}
+.postMent{
+    font-size: 0.8em;
+}
+
+/*비밀일기 버튼*/
+#secretButton{
+    border:none;
+
+    border-radius: 5px;
+    background: white;
+
+    padding: 2em;
+    font-family: 'NeoDunggeunmo';
+    color: white;
+}
+#secretButton:hover{
+    background: blueviolet;
+    transition-duration: 1s;
+}
