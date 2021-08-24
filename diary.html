@@ -109,8 +109,17 @@
                            세상에 희망이 있다면. . .
                         </div>
                     </div>
-                    <button id="secretButton" type="button"><i class="fas fa-lock" style="margin-right: 1em;"></i>김재서의 비밀일기</button>
-                
+                    <div class="secretButton-box">
+                      <button class="secretButton" onclick="getTextFile()">
+                        <i class="fas fa-lock" style="margin-right: 1em;"></i>김재서의 비밀일기
+                      </button>
+                    </div>
+
+                    <div class="diaryPosting box_d" id="secret-box">
+                      <div class="postDate"><i class="fas fa-book" style="margin-right: 1em;"></i>재서의 비밀일기</div>
+                      <div class="postMent" id="secret-diary"></div>
+                    </div>
+                    
                 </div>
             </div>
           </div>
@@ -123,5 +132,27 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function getTextFile(){
+        var input = document.createElement("input");
+        input.type="file";
+        input.accept="text/plain";
+        input.onchange=function(event){
+          processFile(event.target.files[0]);
+        };
+        input.click();
+      }
+      function processFile(file){
+        var reader = new FileReader();
+        reader.readAsText(file, "utf-8");
+        
+        reader.onload=function(){
+          document.getElementById("secret-diary").innerText=reader.result;
+          document.getElementById("secret-box").style.display="block";
+        };
+      }
+    </script>
+
   </body>
 </html>

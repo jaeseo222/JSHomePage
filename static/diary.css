@@ -57,7 +57,7 @@
 }
 .postDate{
     text-align: left;
-    color: #3b87ab;
+    color: #6aa4be;
     margin-bottom: 1.2em;
 }
 .postMent{
@@ -65,7 +65,7 @@
 }
 
 /*비밀일기 버튼*/
-#secretButton{
+.secretButton{
     border:none;
 
     border-radius: 5px;
@@ -75,7 +75,11 @@
     font-family: 'NeoDunggeunmo';
     color: white;
 }
-#secretButton:hover{
+.secretButton:hover{
     background: blueviolet;
     transition-duration: 1s;
+}
+
+#secret-box{
+    display: none;
 }
