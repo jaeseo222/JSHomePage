@@ -1,0 +1,40 @@
+.content_inner{
+    position: relative;
+    font-family: 'NeoDunggeunmo';
+}
+.scrollBox{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+
+    overflow:auto;
+}
+.bookPosting{
+    margin-bottom: 3em;
+}
+.bookPosting .guestInfo{
+    background-color: lightgray;
+    padding: 0.6em 1em;
+    font-size: 0.8em;
+}
+.bookPosting .book{
+    display: flex;
+}
+.bookPosting .profile{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+}
+.bookPosting .profile > img{
+    margin: 1.5em 0.5em 1.5em 0em;
+    width: 100%;
+}
+.bookPosting .ment{
+    flex: 1;
+    margin: 2em 1.6em;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
