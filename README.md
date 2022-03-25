@@ -2,8 +2,7 @@
 html, css 스터디 & 홈페이지 구현
 
 ---
-## 🔗 [cpp코드](https://jaeseo222.github.io/JSHomePage/home.html)
----
+## 🔗 [Welcome](https://jaeseo222.github.io/JSHomePage/home.html)
 
 ### 🏠 홈
 ![1](https://user-images.githubusercontent.com/68185825/155854197-633a9122-62a9-4038-be79-a9e1cf7bf617.png)
